@@ -3,10 +3,10 @@
     function numerical_series($user_number, $number_1 = 1, $number_2 = 1)
     {
         if ($number_1 > $user_number) {
-            echo "Задуманное число НЕ входит в числовой ряд.";
+            return echo "Задуманное число НЕ входит в числовой ряд.";
             break;
         } elseif ($number_1 === $user_number) {
-            echo "Задуманное число входит в числовой ряд.";
+            return echo "Задуманное число входит в числовой ряд.";
             break;
         } else {
             return $number_3 = $number_1;
