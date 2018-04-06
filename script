@@ -1,18 +1,21 @@
 <?php
 
-    function numerical_series($user_number)
+    function numerical_series($some_number)
     {
         $number_1 = 1;
         $number_2 = 1;
 
-        switch($user_number) {
-            case $number_1 > $user_number:
+        switch($some_number) {
+
+            case $number_1 > $some_number:
                 echo "Задуманное число НЕ входит в числовой ряд.";
                 return;
+
             case $number_1 === $user_number:
                 echo "Задуманное число входит в числовой ряд.";
                 return;
 
+            default:
                 $number_3 = $number_1;
                 $number_1 += $number_2;
                 $number_2 = $number_3;
