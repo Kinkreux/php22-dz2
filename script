@@ -1,11 +1,6 @@
 <?php
-    $user_number = rand(0,100);
-    echo "Вы ввели число: " . "$user_number<br><br>";
 
-    $number_1 = 1;
-    $number_2 = 1;
-
-    function numerical_series($user_number)
+    function numerical_series($user_number, $number_1 = 1, $number_2 = 1)
     {
         if ($number_1 > $user_number) {
             echo "Задуманное число НЕ входит в числовой ряд.";
@@ -21,5 +16,7 @@
         }
     }
 
-    var_dump(numerical_series($user_number));
-?>
+    $user_number = rand(0,100);
+    echo "Вы ввели число: " . "$user_number<br><br>";
+    $result = numerical_series($user_number);
+    var_dump($result);
