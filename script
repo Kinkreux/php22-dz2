@@ -5,7 +5,7 @@
         $number_1 = 1;
         $number_2 = 1;
 
-        switch($user_number)
+        switch($user_number) {
 
         case $number_1 > $user_number:
         {
@@ -21,7 +21,7 @@
             $number_1 += $number_2;
             $number_2 = $number_3;
             numerical_series($user_number);
-    }
+        }
 
     $user_number = rand(0,100);
     echo "Вы ввели число: " . "$user_number<br><br>";
