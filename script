@@ -18,10 +18,9 @@
             $number_2 = $number_3;
             numerical_series($user_number);
         }
+    }
 
     $user_number = rand(0,100);
     echo "Вы ввели число: " . "$user_number<br><br>";
     $result = numerical_series($user_number);
     var_dump($result);
-
-    ?>
