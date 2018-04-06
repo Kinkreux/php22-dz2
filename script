@@ -8,14 +8,10 @@
         switch($user_number) {
 
         case $number_1 > $user_number:
-        {
-            return "Задуманное число НЕ входит в числовой ряд."
-        }
+            return "Задуманное число НЕ входит в числовой ряд.";
 
         case $number_1 === $user_number:
-        {
             return "Задуманное число входит в числовой ряд.";
-        }
 
             $number_3 = $number_1;
             $number_1 += $number_2;
