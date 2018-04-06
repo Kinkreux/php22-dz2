@@ -1,10 +1,7 @@
 <?php
 
-    function numerical_series($some_number)
+    function numerical_series($some_number, $number_1 = 1, $number_2 = 1)
     {
-        $number_1 = 1;
-        $number_2 = 1;
-
         switch($some_number) {
 
             case $number_1 > $some_number:
