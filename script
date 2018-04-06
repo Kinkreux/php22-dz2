@@ -2,14 +2,15 @@
 
     function numerical_series($user_number, $number_1 = 1, $number_2 = 1)
     {
+
         if ($number_1 > $user_number) {
             return "Задуманное число НЕ входит в числовой ряд.";
         } elseif ($number_1 === $user_number) {
             return "Задуманное число входит в числовой ряд.";
         } else {
-            return $number_3 = $number_1;
-            return $number_1 += $number_2;
-            return $number_2 = $number_3;
+            $number_3 = $number_1;
+            $number_1 += $number_2;
+            $number_2 = $number_3;
             numerical_series($user_number);
         }
     }
